@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+  background-color: white;
+
+  /* for hide show */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+.logo svg {
+  font-size: 30px;
+}
+header nav {
+  display: flex;
+  gap: 30px;
+}
+nav a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.rightSide {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.searchBar {
+  background-color: #f5f5f5;
+  height: 36px;
+  width: 168px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  transition: ease-in-out 0.2s;
+}
+.searchBar input {
+  width: 134px;
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #f5f5f5;
+  color: black;
+  padding-left: 4px;
+  transition: ease-in-out 0.2s;
+}
+.searchBar i {
+  background-color: #f5f5f5;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
+  font-size: 20px;
+  border-radius: 50%;
+  flex: 1;
+  height: 36px;
+  transition: ease-in-out 0.2s;
+}
+.searchBar i:hover {
+  background-color: #cdcccc;
+  cursor: pointer;
+}
+.searchBar i:hover + input {
+  background-color: #e7e5e5;
+}
+.searchBar:hover {
+  background-color: #e7e5e5;
+}
+.searchBar input:hover {
+  background-color: #e7e5e5;
+}
+
+.rightSide .fa-heart,
+.fa-cart-shopping {
+  font-size: 22px;
+}
+.rightSide .fa-heart:hover {
+  cursor: pointer;
+}
+.fa-cart-shopping:hover {
+  cursor: pointer;
+}
+
+.commonSection {
+  padding: 0 5%;
+  margin-bottom: 100px;
+}
+.text {
+  margin-top: 50px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner img,
+.banner video {
+  height: 100%;
+  width: 100%;
+}
+
+.commonSection .titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.titleSection h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+.shop-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.shop-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.theLatestSection {
+  /* border: 1px solid red; */
+  padding: 0 5%;
+}
+.sectionTitle {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.boxSection {
+  /* border: 1px solid blue; */
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.boxItem {
+  width: 430px;
+  height: 540px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 50px;
+  gap: 20px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.boxItem .shop-btn {
+  width: 150px;
+  background-color: #fff;
+  color: black;
+  margin: 0;
+}
+.boxItem p {
+  font-size: 25px;
+  color: white;
+}
+.classicSpotlightSection {
+  padding: 0;
+}
+.classicSpotlightSection p {
+  padding: 0 5%;
+}
+.classicSpotlightSection .box {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.classicSpotlightSection .box .item {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 15px;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.classicSpotlightSection .box .item:hover {
+  cursor: pointer;
+}
+
+.sportSection {
+  margin-bottom: 50px;
+}
+.sportSection .sectionTitle {
+  padding: 0 5%;
+}
+.sportSection .boxSection .boxItem {
+  width: 440px;
+  height: 300px;
+  filter: saturate(0);
+}
+
+.footerMenu {
+  display: flex;
+  padding: 5%;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+}
+.footerMenu .list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerMenu .list a {
+  text-decoration: none;
+  opacity: 0.6;
+  font-size: 15px;
+}
+.footerMenu .region {
+  display: flex;
+  gap: 5px;
+  opacity: 0.6;
+}
+.copyrightSection {
+  display: flex;
+  padding: 0 5%;
+  gap: 50px;
+  margin: 20px 0;
+  align-items: center;
+}
+.copyrightSection a,
+.copyrightSection p {
+  text-decoration: none;
+  opacity: 0.6;
+}
